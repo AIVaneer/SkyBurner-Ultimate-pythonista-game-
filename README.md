@@ -84,4 +84,17 @@ depleted and must be recharged by collecting another capsule.
 
 ---
 
+## Topics
+
+![Topic](https://img.shields.io/badge/-python-blue)
+![Topic](https://img.shields.io/badge/-arcade--game-red)
+![Topic](https://img.shields.io/badge/-ios-black)
+![Topic](https://img.shields.io/badge/-pythonista3-green)
+![Topic](https://img.shields.io/badge/-game--engine-orange)
+![Topic](https://img.shields.io/badge/-space--shooter-purple)
+![Topic](https://img.shields.io/badge/-mobile--game-yellow)
+![Topic](https://img.shields.io/badge/-open--source-brightgreen)
+
+---
+
 *PCVR STUDIOS · Atlas Nexus Engine v1.0*
