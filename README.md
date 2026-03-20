@@ -5,6 +5,15 @@
 
 ---
 
+## Downloads
+
+| Download | Link |
+|---|---|
+| **🎮 Game Download** | [Download SkyBurner Ultimate](https://discord.com/channels/1316937801995911198/1484003872178573495/1484552464639332605) |
+| **🎵 Music Download** | [Download Game Music](https://discord.com/channels/1316937801995911198/1484003872178573495/1484595490828845229) |
+
+---
+
 ## Overview
 
 SkyBurner Ultimate is a vertical-scrolling arcade space-shooter written
@@ -70,7 +79,7 @@ skyburner.py     Pythonista Scene subclass, HUD, star-field,
 - Wave **5, 10, 15 …** are Boss waves — save at least one bomb!
 - Collect the **green W capsule** to upgrade your weapon through four tiers.
 - The **blue shield capsule** absorbs damage; it auto-deactivates when
-  depleted and must be recharged by collecting another capsule.
+depleted and must be recharged by collecting another capsule.
 - Every wave cleared awards a **wave-clear bonus** on top of kill scores.
 
 ---
