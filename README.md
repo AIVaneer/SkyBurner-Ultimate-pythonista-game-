@@ -3,6 +3,10 @@
 **The most intense arcade shooter for Pythonista 3 & iOS Devices**
 *Powered by the Atlas Nexus Engine · PCVR STUDIOS*
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Python](https://img.shields.io/badge/Python-3-blue.svg)
+![Platform](https://img.shields.io/badge/Platform-iOS%20%2F%20Pythonista%203-lightgrey.svg)
+
 ---
 
 ## Downloads
@@ -11,6 +15,16 @@
 |---|---|
 | **🎮 Game Download** | [Download SkyBurner Ultimate](https://discord.com/channels/1316937801995911198/1484003872178573495/1484552464639332605) |
 | **🎵 Music Download** | [Download Game Music](https://discord.com/channels/1316937801995911198/1484003872178573495/1484595490828845229) |
+
+---
+
+## Community
+
+| | Link |
+|---|---|
+| 💬 **Discord** | [Join our Discord](https://discord.gg/E7bW3Zh4x) |
+| 🐦 **Twitter / X** | [@pcvr2024](https://x.com/pcvr2024?s=21) |
+| 🎮 **PCVR Games Hub** | [AIVaneer/Eve-Repository](https://github.com/AIVaneer/Eve-Repository) |
 
 ---
 
@@ -73,6 +87,17 @@ skyburner.py     Pythonista Scene subclass, HUD, star-field,
 
 ---
 
+## Built With
+
+| Component | Details |
+|---|---|
+| **Python 3** | 100% Python — no compiled extensions |
+| **Pythonista 3** | Uses the built-in `scene` and `ui` modules for all rendering and input |
+| **Atlas Nexus Engine** | Custom in-house entity-component engine (collision, wave management, scoring) |
+| **No external dependencies** | Everything ships in three `.py` files |
+
+---
+
 ## Tips
 
 - Destroy **5 enemies in quick succession** to increase your multiplier.
@@ -84,4 +109,19 @@ depleted and must be recharged by collecting another capsule.
 
 ---
 
-*PCVR STUDIOS · Atlas Nexus Engine v1.0*
+## Related Projects
+
+| Project | Description |
+|---|---|
+| [**Warp Protocol**](https://github.com/AIVaneer/Eve-Repository) | Fast-paced arcade shooter with cinematic intro, dynamic starfield, and diverse enemy archetypes |
+| [**PCVR Game Shell**](https://github.com/AIVaneer/PCVR-game-shell-) | Foundational 2D VR game framework for Oculus Quest 3 |
+
+---
+
+## About PCVR Studios
+
+> PCVR Studios builds immersive games across multiple platforms — from iOS arcade shooters to VR experiences on Oculus Quest 3. All projects are powered by custom in-house engines and open-source collaboration.
+
+---
+
+*© PCVR STUDIOS 2026 · Atlas Nexus Engine v1.0*
