@@ -1,5 +1,7 @@
 # 🚀 SkyBurner Ultimate
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/AIVaneer/SkyBurner-Ultimate-pythonista-game-/blob/main/LICENSE) [![Python](https://img.shields.io/badge/Python-3-blue.svg)](https://www.python.org/) [![Platform](https://img.shields.io/badge/Platform-iOS%20%7C%20Pythonista%203-lightgrey.svg)](http://omz-software.com/pythonista/)
+
 **The most intense arcade shooter for Pythonista 3 & iOS Devices**
 *Powered by the Atlas Nexus Engine · PCVR STUDIOS*
 
@@ -11,6 +13,16 @@
 |---|---|
 | **🎮 Game Download** | [Download SkyBurner Ultimate](https://discord.com/channels/1316937801995911198/1484003872178573495/1484552464639332605) |
 | **🎵 Music Download** | [Download Game Music](https://discord.com/channels/1316937801995911198/1484003872178573495/1484595490828845229) |
+
+---
+
+## Community
+
+| Platform | Link |
+|---|---|
+| **💬 Discord** | [Join PCVR Studios](https://discord.gg/E7bW3Zh4x) |
+| **🐦 Twitter / X** | [@pcvr2024](https://x.com/pcvr2024?s=21) |
+| **🏠 PCVR Games Hub** | [Eve-Repository](https://github.com/AIVaneer/Eve-Repository) |
 
 ---
 
@@ -73,6 +85,16 @@ skyburner.py     Pythonista Scene subclass, HUD, star-field,
 
 ---
 
+## Built With
+
+| Technology | Details |
+|---|---|
+| **Python 3** | Core language — 100% Python, zero external dependencies |
+| **Pythonista 3** | `scene` and `ui` modules for rendering and input |
+| **Atlas Nexus Engine** | Custom in-house entity-component game engine |
+
+---
+
 ## Tips
 
 - Destroy **5 enemies in quick succession** to increase your multiplier.
@@ -88,4 +110,19 @@ depleted and must be recharged by collecting another capsule.
 
 ![Topic](https://img.shields.io/badge/-python-blue) ![Topic](https://img.shields.io/badge/-arcade--game-red) ![Topic](https://img.shields.io/badge/-ios-black) ![Topic](https://img.shields.io/badge/-pythonista3-green) ![Topic](https://img.shields.io/badge/-game--engine-orange) ![Topic](https://img.shields.io/badge/-space--shooter-purple) ![Topic](https://img.shields.io/badge/-mobile--game-yellow) ![Topic](https://img.shields.io/badge/-open--source-brightgreen)
 
-*PCVR STUDIOS · Atlas Nexus Engine v1.0*
+---
+
+## Related Projects
+
+| Project | Description |
+|---|---|
+| **[Warp Protocol](https://github.com/AIVaneer/Eve-Repository)** | Fast-paced arcade shooter with cinematic intro, dynamic starfield, and enemy archetypes |
+| **[PCVR Game Shell](https://github.com/AIVaneer/PCVR-game-shell-)** | Foundational 2D VR game framework for Oculus Quest 3 |
+
+## About PCVR Studios
+
+> PCVR Studios builds immersive games across multiple platforms — from iOS arcade shooters to VR experiences on Oculus Quest 3. All projects are powered by custom in-house engines and open-source collaboration.
+
+---
+
+*© PCVR STUDIOS 2026 · Atlas Nexus Engine v1.0*
