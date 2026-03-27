@@ -15,7 +15,32 @@ Provides:
 
 import math
 import random
+import os
+import json
 from collections import defaultdict
+
+
+# ─────────────────────────────────────────────────────────
+# HIGH-SCORE PERSISTENCE HELPERS                   [patch]
+# ─────────────────────────────────────────────────────────
+
+_SCORE_FILE = os.path.expanduser('~/Documents/skyburner_scores.json')  # [patch]
+
+
+def _load_high_score():  # [patch]
+    try:
+        with open(_SCORE_FILE, 'r') as f:
+            return json.load(f).get('high_score', 0)
+    except Exception:
+        return 0
+
+
+def _save_high_score(score):  # [patch]
+    try:
+        with open(_SCORE_FILE, 'w') as f:
+            json.dump({'high_score': score}, f)
+    except Exception:
+        pass
 
 
 # ─────────────────────────────────────────────────────────
@@ -358,7 +383,7 @@ class ScoreManager:
 
     def __init__(self):
         self.score = 0
-        self.high_score = 0
+        self.high_score = _load_high_score()  # [patch] load from disk on init
         self.multiplier = 1
         self._mult_timer = 0.0
         self._mult_duration = 5.0
@@ -374,6 +399,7 @@ class ScoreManager:
         self.score += earned
         if self.score > self.high_score:
             self.high_score = self.score
+            _save_high_score(self.high_score)  # [patch] persist new high score
         return earned
 
     def register_kill(self, base_points):
@@ -535,6 +561,7 @@ class AtlasNexusEngine:
         self.wave_manager.update(dt)
 
     def reset(self):
+        Entity._id_counter = 0   # [patch] reset entity IDs on each new game
         self.entity_manager.clear()
         self.score_manager.reset()
         self.wave_manager.reset()
