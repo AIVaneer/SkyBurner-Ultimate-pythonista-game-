@@ -234,6 +234,11 @@ class HUD(Node):
         self._boss_bar.anchor_point = (0, 0)
         self._boss_container.add_child(self._boss_bar)
 
+        # [patch] tracker attributes to rate-limit .path reassignment
+        self._last_hp_w   = -1.0
+        self._last_sh_w   = -1.0
+        self._last_boss_w = -1.0
+
     # ── internal helpers ───────────────────────────────
 
     def _rebuild_lives(self, count):
@@ -280,10 +285,14 @@ class HUD(Node):
             col = Color(1.0, 0.65, 0.0)
         else:
             col = Color(1.0, 0.05, 0.05)
-        self._hp_bar.path       = ui.Path.rect(0, 0, bw, 9)
-        self._hp_bar.fill_color = col
+        if abs(bw - self._last_hp_w) > 0.5:  # [patch] skip if <0.5 px change to reduce render work
+            self._hp_bar.path       = ui.Path.rect(0, 0, bw, 9)
+            self._hp_bar.fill_color = col
+            self._last_hp_w = bw  # [patch]
         sw = max(0.0, self._max_bar * sh_ratio)
-        self._sh_bar.path = ui.Path.rect(0, 0, sw, 5)
+        if abs(sw - self._last_sh_w) > 0.5:  # [patch] skip if <0.5 px change to reduce render work
+            self._sh_bar.path = ui.Path.rect(0, 0, sw, 5)
+            self._last_sh_w = sw  # [patch]
 
     def update_lives(self, lives):
         self._rebuild_lives(max(0, lives))
@@ -305,7 +314,9 @@ class HUD(Node):
 
     def update_boss_health(self, ratio):
         bw = max(0.0, self._boss_max_w * ratio)
-        self._boss_bar.path = ui.Path.rect(0, 0, bw, 11)
+        if abs(bw - self._last_boss_w) > 0.5:  # [patch] skip if <0.5 px change to reduce render work
+            self._boss_bar.path = ui.Path.rect(0, 0, bw, 11)
+            self._last_boss_w = bw  # [patch]
 
 
 # ─────────────────────────────────────────────────────────
